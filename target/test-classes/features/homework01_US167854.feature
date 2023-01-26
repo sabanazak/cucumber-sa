@@ -9,7 +9,7 @@ Feature: Blue_Rental_Cars_Login
     And click on login button
     Then verify the login is successful
     And user logout
-    And close the application
+    And close the blue rental cars application
 
     Examples: test_data
       |username|password|

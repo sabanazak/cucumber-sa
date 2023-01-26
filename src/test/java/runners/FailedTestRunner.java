@@ -9,11 +9,10 @@ import org.junit.runner.RunWith;
                 "pretty",
                 "html:target/blue-rental-cars-login-test-reports.html"
         },
-        monochrome=true,
         features = "./src/test/resources/features",
-        glue = "stepdefinitions",
+        glue = {"stepdefinitions", "hooks"},
         dryRun = false,
-        tags="@data_tables_instructor"
+        tags="@failed_test"
 )
-public class RunnerForRentalCars {
+public class FailedTestRunner {
 }
